@@ -145,4 +145,4 @@ jupyter notebook notebooks/healthcare_analysis.ipynb
 
 **Ogo Chukwuemeka Okereke**  
 Data Analyst · Abuja, Nigeria  
-[LinkedIn](https://linkedin.com/in/ogochukwuemeka/) · [Portfolio](https://mikkymo.github.io/portfolio/)
+[LinkedIn](www.linkedin.com/in/ogochukwuemeka) · [Portfolio](https://mikkymo.github.io/portfolio/)
