@@ -4,7 +4,15 @@
 
 This Python capstone examines **55,500 rows and 15 variables** from the [Prasad Patil healthcare dataset on Kaggle](https://www.kaggle.com/datasets/prasad22/healthcare-dataset). This is a public practice dataset, not a hospital's verified operational record. The repository includes the CSV, an analysis notebook, dashboard images, a report and a presentation.
 
-![Healthcare analysis overview](images/healthcare-overview.png)
+## Dashboard screenshots
+
+- [Open the healthcare dashboard overview](images/healthcare-overview.png).
+- [Open the second dashboard screenshot](images/healthcare-detail-2.png).
+- [Open the third dashboard screenshot](images/healthcare-detail-3.png).
+
+These are the original static screenshots of the analysis, not a live application.
+
+![Original healthcare analysis dashboard overview](images/healthcare-overview.png)
 
 ## Analysis
 
