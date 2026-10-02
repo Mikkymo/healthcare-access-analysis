@@ -1,3 +1,7 @@
-# Earlier project materials
+# Historical Project Deliverables
 
-These files preserve the original reports or presentations. Some descriptions or numbers predate the source-verified README and may use unsupported causal or business-impact language. The repository's main README and current dashboard preview are the maintained explanation of this project.
+[Return to the current project overview](../README.md)
+
+This folder preserves earlier reports and presentations for reference. Current findings, definitions, and limitations are documented in the [analytical notes](../docs/analytical-notes.md).
+
+Historical documents may contain earlier interpretations or labels and should not be treated as the current analytical summary.

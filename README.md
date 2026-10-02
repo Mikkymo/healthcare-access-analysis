@@ -1,37 +1,60 @@
-# Healthcare admissions and billing analysis
+# Healthcare Admissions and Billing Analysis
+### Descriptive analysis and classification limits
 
-**Question:** How do admissions, length of stay, billing and test-result labels vary across this healthcare practice dataset?
+A Python capstone exploring 55,500 records and 15 variables from Prasad Patil’s public healthcare practice dataset, covering admissions, length of stay, billing, and test-result labels.
 
-This Python capstone examines **55,500 rows and 15 variables** from the [Prasad Patil healthcare dataset on Kaggle](https://www.kaggle.com/datasets/prasad22/healthcare-dataset). This is a public practice dataset, not a hospital's verified operational record. The repository includes the CSV, an analysis notebook, dashboard images, a report and a presentation.
+**Tools:** Python · pandas · NumPy · Jupyter  
+**Analyst:** Chukwuemeka Ogo
 
-## Dashboard screenshots
+**[View dashboards](docs/dashboard-gallery.md)** · [Read analytical notes](docs/analytical-notes.md)
 
-- [Open the healthcare dashboard overview](images/healthcare-overview.png).
-- [Open the second dashboard screenshot](images/healthcare-detail-2.png).
-- [Open the third dashboard screenshot](images/healthcare-detail-3.png).
+## Business question
 
-These are the original static screenshots of the analysis, not a live application.
+How do admissions, length of stay, billing, and test-result labels vary across the supplied practice records?
 
-![Original healthcare analysis dashboard overview](images/healthcare-overview.png)
+## Dashboard preview
 
-## Analysis
+![Healthcare Admissions and Billing Analysis overview](images/healthcare-overview.png)
 
-The [`healthcare_analysis.ipynb`](healthcare_analysis.ipynb) notebook explores admission types and conditions, length of stay, billing by condition and insurer, medication versus test-result labels, and a Random Forest classification exercise. It reports similar numbers of records across six conditions, a roughly 15.5-day average stay and average billing around $25,500. The model reports **41.69% accuracy**, which should be interpreted against class distribution and validation design, not described as clinically useful on its own.
+[Explore all dashboard views and version notes →](docs/dashboard-gallery.md)
 
-## Interpretation and limits
+## Key findings
 
-These comparisons describe the dataset; they do not show that particular treatments or insurers cause outcomes. The dataset's artificial-looking category balance limits real-world conclusions, and patient-level prediction would require appropriate clinical validation. No runnable Dash app or `requirements.txt` is present in this repository, so the screenshots are previews of the analysis rather than a locally launchable application.
+| Notebook-reported observation | Result |
+| --- | ---: |
+| Records | 55,500 |
+| Variables | 15 |
+| Average length of stay | Approximately 15.5 days |
+| Average billing | Approximately $25,500 |
+| Random Forest accuracy | 41.69% |
 
-## Files
+The classification result requires comparison with a baseline, class distribution, and validation design before judging model usefulness.
 
-| File | Purpose |
+## Decision use
+
+1. Use admission and billing summaries to define questions for further investigation.
+2. Assess classification performance against suitable baselines and validation checks.
+3. Confirm dataset representativeness before applying findings to operational decisions.
+
+These recommendations identify next steps; they do not represent measured business impact.
+
+## Approach
+
+Explore admission types and conditions, length of stay, billing by condition and insurer, and medication versus test-result labels. Treat the Random Forest exercise separately from descriptive findings and assess its validation design.
+
+## Explore the project
+
+| Resource | Purpose |
 | --- | --- |
-| [`healthcare_dataset.csv`](healthcare_dataset.csv) | Practice dataset |
-| [`healthcare_analysis.ipynb`](healthcare_analysis.ipynb) | Python notebook |
-| [`images/`](images/) | Three dashboard screenshots |
-| [`Healthcare_Analysis_Report.docx`](archive/Healthcare_Analysis_Report.docx) | Written report |
-| [`Healthcare_Analysis_Presentation_1.pptx`](archive/Healthcare_Analysis_Presentation_1.pptx) | Presentation |
+| [Python notebook](healthcare_analysis.ipynb) | Python notebook |
+| [Practice dataset](healthcare_dataset.csv) | Practice dataset |
+| [Dashboard gallery](docs/dashboard-gallery.md) | Full-size views and version context |
+| [Analytical notes](docs/analytical-notes.md) | Methodology, metric definitions, and limitations |
 
-Open the notebook in Jupyter or VS Code. Install the packages it imports in your Python environment; package versions are not pinned here.
+## Scope and limitations
 
-**Analyst:** [Chukwuemeka Ogo](https://mikkymo.github.io/portfolio/) · [LinkedIn](https://www.linkedin.com/in/ogochukwuemeka/)
+This is a public practice dataset, not verified hospital operational data. Category balance limits real-world interpretation. Associations do not establish treatment effects, and the classifier is not established as clinically useful.
+
+---
+
+[Portfolio](https://mikkymo.github.io/portfolio/) · [LinkedIn](https://www.linkedin.com/in/ogochukwuemeka/)
